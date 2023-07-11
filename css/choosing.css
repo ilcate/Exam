@@ -1,0 +1,56 @@
+.active .starter-show-case{
+    visibility: visible;
+}
+
+.active .pokeball-starters{
+    display: none;
+}
+
+#divFirst:hover .pokeball-starters{
+    display: none;
+}
+#divFirst:hover .starter-show-case{
+    visibility:visible;
+}
+#divSecond:hover .pokeball-starters{
+    display: none;
+}
+#divSecond:hover .starter-show-case{
+    visibility:visible;
+}
+#divThird:hover .pokeball-starters{
+    display: none;
+}
+#divThird:hover .starter-show-case{
+    visibility:visible;
+}
+
+
+.pokeball-starters{
+    position: absolute;
+    width: 200px;
+    left: 10%;
+    top: 0%;
+}
+
+
+.starter-show-case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    visibility: hidden;
+    border-radius: 999px;
+}
+.starter-show-case :hover{
+    visibility: visible;
+}
+
+.team-show-case{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+

@@ -1,0 +1,218 @@
+.battle-bg-image{
+    display: flex;
+    margin: 30px;
+    width: 75%;
+    height: 75%;
+    
+}
+
+.battle-btn-div button{
+    transform: scale(1.4);
+    margin-bottom: 65px;
+}
+
+
+.battle-ground{
+    width: calc(3287px / 3);
+    height:  calc(2054px / 3);
+    background-image: url(../assets/bfgsus_def.png);
+    background-size: cover;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.bug{
+    filter:hue-rotate(120deg) saturate(60%);
+}
+
+.bw{
+    filter: saturate(0%);
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.dark{
+    filter: grayscale(80%) hue-rotate(40deg);
+}
+
+.dragon{
+    filter: hue-rotate(300deg) saturate(50%);
+}
+
+.electric{
+    filter:hue-rotate(60deg) brightness(130%);
+}
+
+#enemy-life-bar{
+    position: absolute;
+    left: 15%;
+    width: 80%;
+    height: 15%;
+    border: solid 1px #000000;
+}
+
+#enemy-life-per{
+    width: 100%;
+    height: 100%;
+    background-color:#0BDA51;
+    transition: all ease .5s;
+}
+
+.enemy-pokemon-info{ 
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 45%;
+    height: 20%;
+    background-color: #ffffff;
+    border: solid 2px #000000;
+    color:#010024;
+} 
+
+#enemy-pokemon-name{ 
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 15px;
+} 
+
+.enemy-spot{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    width: 300px;
+
+}
+
+.fairy{
+    filter:hue-rotate(330deg);
+}
+
+.fighting{
+    filter: brightness(100%) saturate(50%);
+}
+
+.fire{
+    filter: brightness(130%);
+}
+
+.flying{
+    filter: hue-rotate(180deg);
+}
+
+.ghost{
+    filter: hue-rotate(270deg) saturate(90%);
+}   
+
+.grass{
+    filter: hue-rotate(150deg); 
+}
+
+.ground{
+    filter: hue-rotate(40deg) saturate(90%);
+}
+
+.hp{
+    position: absolute;
+    left: 20px;
+}
+
+.ice{
+    filter: hue-rotate(200deg);
+}
+
+.normal{
+    filter:saturate(20%);
+}
+
+.p-l{
+    text-transform: capitalize;
+    position: absolute;
+    left: 20px;
+}
+
+
+.pokemon-enemy-active{
+    position: absolute;
+    top: 18%;
+    right: 9%;
+    width: 200px;
+}
+
+.pokemon-preview{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50px;
+    margin-left: -20px;
+}
+
+.pokemon-user-active{
+    position: absolute;
+    bottom: 15%;
+    left: 9%;
+    width: 300px; 
+}
+
+.pokemon-spot{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 400px;
+}
+
+.poison{
+    filter: hue-rotate(290deg) saturate(50%);
+}
+
+.psychic{
+    filter: hue-rotate(270deg) brightness(120%);
+}
+
+
+.rock{
+    filter: hue-rotate(60deg) saturate(90%);
+}
+
+.steel{
+    filter: grayscale(100%) brightness(130%);
+}
+
+.user-pokemon-info{ 
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    width: 45%;
+    height: 20%;
+    background-color: #ffffff;
+    border: solid 2px #000000;
+    color:#010024;
+}
+
+#user-pokemon-name{ 
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 15px;
+} 
+
+#user-life-bar{
+    position: absolute;
+    left: 15%;
+    width: 80%;
+    height: 15%;
+    border: solid 1px #000000;
+    ;
+}
+
+
+#user-life-per{
+    width: 100%;
+    height: 100%;
+    background-color: #0BDA51;
+    transition: all ease .5s;
+}
+
+.water{
+    filter: hue-rotate(240deg);
+}

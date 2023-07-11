@@ -1,0 +1,325 @@
+@font-face {
+    font-family: arcade;
+    src: url("../assets/ARCADEPI.TTF");
+}
+
+#display-c-number{
+    font-size: 12px; 
+}
+
+#display-coin-number{
+    font-size: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.all-screen{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.btn-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    width: 200px;
+}
+
+.box-image-bg{
+    z-index: -10;
+}
+
+.btn-p{
+    padding: 0px;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+
+.disappear{
+    visibility: none;
+}
+
+.display-battle{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.form-label{
+    font-size: 14px;
+}
+
+.image-btn{
+    position: relative;
+    margin: 2em 0 3em 0;
+}
+
+.image-btn img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    width: 200px;
+}
+
+.image-btn p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration: none;
+    font-size: 16px;
+    color: #010024;
+}
+
+.image-btn p, .input-div p{
+    width: 200px;
+    text-align:  center;
+    
+}
+
+.image-btn p:visited{
+    color: #010024;
+}
+
+.image-btn span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    width: max-content;
+}
+
+
+.input{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background: transparent;
+    color: #ffffff;
+    border: 0ch;
+    font-size: 12px;
+}
+
+.input-div{
+    position: relative;
+    width: 200px;
+    height: 61.87px;
+}
+
+.input-image{
+    width: 200px;
+    height: 61.87px;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+.left{
+    margin-left: 50px;
+}
+
+.loaderDiv{
+    position: absolute;
+    z-index: 5;
+    background-color: #010024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loaderDiv img{
+    width: 350px;
+}
+
+.loaderDiv p{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.logo{
+    margin-top: 30px;
+    width: 150px;
+    height: auto;
+}
+
+.made-by{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+.margin{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+
+
+.not{
+    user-select: none;
+    pointer-events: none;
+}
+
+
+::placeholder{
+    color: #D3D3D3;
+}
+
+.pokeball{
+    width: 200px;
+    margin-top: 20px;
+}
+
+.pokeball-scale{
+    position: absolute;
+    bottom: -10%;
+    right: 20%;
+    transform: scale(0.6);
+}
+
+
+.pokemon-selector{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+
+.red{
+    color: red;
+}
+
+
+.relative{
+    display: flex;
+    position: relative; 
+    align-content: center;
+    justify-content: center;
+}
+
+
+.scale{
+    transform: scale(1.4);
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.scale img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform :translateX(-23%) translateY(-30%)
+}
+
+.scale-t{
+    transform: scale(1.4);
+    margin-top: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+.t-center{
+    position: absolute;
+}
+
+
+.text-color{
+    color: #010024;
+}
+
+
+.transparent-button{
+    border: 0;
+    background: transparent;
+}
+
+
+.wh{
+    width: 100%;
+    height: 100%;
+}
+
+.yellow{
+    border: 2px solid yellow;
+}
+
+
+
+a{
+    font-size: 14px;
+}
+
+body{
+    background-color: #010024;
+    color: white;
+    font-family: arcade;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 90px;
+}
+
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+label{
+    margin-left: 5px;
+}
+

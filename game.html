@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/NicePng_master-ball-png_8912776.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <title>Arcademon</title>
+</head>
+<body>
+    <div id = "loader" class="loaderDiv">
+        <div class="container cont">
+            <img src="assets/pikachu-running.gif" alt="pikachu-running">
+            <p>Loading...</p>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row all-screen">
+            <div class="col">
+                <div class="battle-ground relative">
+                    <div id="user-spot"><img src="/assets/pokemon_spot.png" alt="battle background" class="pokemon-spot">
+                        <div id="active-pkm-user"></div>
+                    </div>
+                    <div class="user-pokemon-info">
+                        <div id="user-pokemon-name"></div>
+                        <div class="hp">HP</div>
+                        <div id="user-life-bar">
+                            <div id="user-life-per"></div>
+                        </div>
+                    </div>
+                    <div id="enemy-spot"><img src="/assets/pokemon_spot.png" alt="battle background" class="enemy-spot">
+                        <div id="active-pkm-enemy"></div>
+                    </div>
+                    <div class="enemy-pokemon-info"> 
+                        <div id="enemy-pokemon-name"></div>
+                        <div id="enemy-life-bar">
+                            <div id="enemy-life-per"></div>
+                        </div>
+                        <div class="hp">HP</div>
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="pokemon-selector relative col-3">
+                        <button class="btn-p scale transparent-button" id="pokemon1-bench-box">
+                            <img src="assets/tButton.png" alt="box" class="btn-image box-bench" >
+                            <span id="pokemon1-bench" class="relative 1">
+                                <div id="pokemon1-bench-name" class="p-l"></div>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="pokemon-selector relative col-3">
+                        <button class="btn-p scale transparent-button" id="pokemon2-bench-box">
+                            <img src="assets/tButton.png" alt="box"  class="btn-image box-bench">
+                            <span id="pokemon2-bench" class="relative 2">
+                                <div id="pokemon2-bench-name" class="p-l"></div>
+                            </span>
+                        </button>
+                    </div> 
+                    <div class="pokemon-selector relative col-3" >
+                        <button class="btn-p scale transparent-button" id="pokemon3-bench-box">
+                            <img src="assets/tButton.png" alt="box" class="btn-image box-bench">
+                            <span id="pokemon3-bench" class="relative 3">
+                                <div id="pokemon3-bench-name" class="p-l"></div>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                    <div class="row margin-top">
+                        <h3>ARCADEMON</h3>
+                    </div>
+                    <div class="row">
+                        <div class="battle-btn-div relative menu-btn">
+                            <button id="fightButton" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box"  class="btn-image">
+                                <p>Fight</p>
+                            </button>
+                        </div>
+                        <div class="battle-btn-div relative move-btn d-none">
+                            <button id="move-btn-1" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box"  class="move-box">
+                                <p id="move-1" class="capitalize"></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="battle-btn-div relative menu-btn">
+                            <button id="changePokemonButton" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box" class="btn-image">
+                                <p>Pokemon</p>
+                            </button>
+                        </div>
+                        <div class="battle-btn-div relative move-btn d-none">
+                            <button id="move-btn-2" class = "image-btn btn-p ">
+                                <img src="assets/bButton.png" alt="box" class="move-box">
+                                <p id="move-2" class="capitalize"></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="battle-btn-div relative menu-btn">
+                            <button id="surrenderButton" class = "image-btn btn-p" >
+                                <img src="assets/bButton.png" alt="box" class="btn-image ">
+                                <p>Surrender</p>
+                            </button>
+                        </div>
+                        <div class="battle-btn-div relative move-btn d-none">
+                            <button id="move-btn-3" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box" class="move-box" >
+                                <p id="move-3" class="capitalize"></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="battle-btn-div relative menu-btn">
+                            <button id="saveBtn" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box" class="btn-image ">
+                                <p>Save and Exit</p>
+                            </button>
+                        </div>
+                        <div class="battle-btn-div relative move-btn d-none">
+                            <button id="move-btn-4" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box" class="move-box">
+                                <p id="move-4" class="capitalize"></p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="battle-btn-div relative menu-btn">
+                            <div id="changePokemonButton" class = "image-btn scale-t btn-p">
+                                <img src="assets/tButton.png" alt="box" class="btn-image">
+                                <span id="coin-display"></span>
+                            </div>
+                        </div>
+                        <div class="battle-btn-div relative back-btn d-none">
+                            <button id="back-btn" class = "image-btn btn-p">
+                                <img src="assets/bButton.png" alt="box" >
+                                <p>Back</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6>BY CHRISTIAN CATENACCI</h6>
+                    </div>
+                    <div class="row center">
+                        <img src="assets/NicePng_master-ball-png_8912776.png" alt="pokeball" class="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/game.js" type="module"></script>
+</body>
+</html>
